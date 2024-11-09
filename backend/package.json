@@ -6,6 +6,7 @@
     "npm": "^10.8.2",
     "sqlite3": "^5.1.7",
     "swagger-jsdoc": "^6.2.8",
-    "swagger-ui-dist": "^5.16.2"
+    "swagger-ui-dist": "^5.16.2",
+    "swagger-ui-express": "^5.0.1"
   }
 }

@@ -13,10 +13,6 @@ jobs:
       - name: Instalando dependencias da folder backend
         working-directory: ./backend
         run: npm install
-        
-      - name: Verificar dependências
-        working-directory: ./backend
-        run: npm list swagger-ui-express
 
       - name: Instalando dependencias da folder tests
         working-directory: ./tests
