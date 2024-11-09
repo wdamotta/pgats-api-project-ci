@@ -1,0 +1,63 @@
+Documentação
+
+ você também terá a missão de validar, os dados da documentação se os mesmos estão devidamente retornando os status corretos,
+ as mensagens previamente descritivas,
+  também se todos os campos que estamos passando de fato são campos que precisam estar informados na documentação,
+   tanto em seu envio, quanto em seu retorno.
+
+
+   Get 
+
+    dados documentação OK
+    Retornando status corretos OK
+    Mensagem descritiva OK
+    Campos Envio OK
+    Campos Retorno OK
+
+   Post
+
+    dados documentação 
+      201 conteudo criado com sucesso OK
+      422 "Campos extras encontrados: id, dataCadastro" BUG
+      422 "Os seguintes campos são obrigatórios: conteudo" BUG
+      400 Error: Bad Request   BUG  
+    
+    Retornando status corretos X BUG
+    Mensagem descritiva OK
+    Campos Envio X BUG 
+    Campos Retorno  OK
+
+
+   Get ID
+    dados documentação 
+      200 conteudo encontrado OK
+      404 conteudo nao encontrado OK
+    Retornando status corretos OK
+    Mensagem descritiva OK
+    Campos Envio ID OK
+    Campos Retorno OK
+
+
+   Delete
+
+    dados documentação 
+      200 conteudo encontrado OK
+      404 conteudo nao encontrado OK
+    Retornando status corretos OK
+    Mensagem descritiva OK
+    Campos Envio ID OK
+    Campos Retorno OK 
+
+   Put
+
+    dados documentação 
+      201 conteudo atualizado com sucesso OK
+      404 conteudo nao encontrado OK
+      422   "error": "Campos extras encontrados: id, dataCadastro" X  BUG
+      400 ERROR: Bad Request   X BUG
+
+
+    Retornando status corretos  OK
+    Mensagem descritiva  OK
+    Campos Envio ID X  Campos extras encontrados: id, dataCadastro BUG 
+    Campos Retorno OK
