@@ -18,6 +18,10 @@ jobs:
         working-directory: ./tests
         run: npm install
 
+      - name: iniciando backend project
+        working-directory: ./backend
+        run: node app.js
+
       - name: Testes API
         working-directory: ./tests
         run: npm test
