@@ -15,7 +15,7 @@ node_modules/
 Thumbs.db
 
 # Arquivos de ambiente
-.env
+# .env
 
 # Arquivos específicos do editor
 .vscode/
