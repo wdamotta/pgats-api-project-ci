@@ -10,17 +10,19 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Instalando dependencias da folder backend
+      - name: Instalando dependências da pasta backend
         working-directory: ./backend
         run: npm install
 
-      - name: Instalando dependencias da folder tests
+      - name: Instalando dependências da pasta tests
         working-directory: ./tests
         run: npm install
 
-      - name: iniciando backend project
+      - name: Iniciando backend em segundo plano
         working-directory: ./backend
-        run: node app.js
+        run: |
+          nohup node app.js & 
+          sleep 5 # Espera 5 segundos para o backend inicializar
 
       - name: Testes API
         working-directory: ./tests
