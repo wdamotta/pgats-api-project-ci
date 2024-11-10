@@ -21,8 +21,7 @@ jobs:
       - name: Iniciando backend em segundo plano
         working-directory: ./backend
         run: |
-          nohup node app.js & 
-          sleep 5 # Espera 5 segundos para o backend inicializar
+          nohup node app.js &
 
       - name: Testes API
         working-directory: ./tests
