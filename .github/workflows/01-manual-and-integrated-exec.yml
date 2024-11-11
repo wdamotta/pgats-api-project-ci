@@ -1,4 +1,4 @@
-name: Execução Manual
+name: Manual run & Integrated when push on main
 
 on:
   workflow_dispatch:
